@@ -1,0 +1,8 @@
+<p>autrepage works!</p>
+<hr>
+<div *ngFor="let fruit of fruits" >
+  <p>{{fruit.name}}</p>
+  <p>{{fruit.couleur}}</p>
+  <hr>
+  <button class="btn btn-success" [routerLink]="['/fruit',fruit.id]" >Voir {{fruit.name}}</button>
+</div>
